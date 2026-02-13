@@ -213,7 +213,6 @@ export function RouteMap({
 
   const handleTouchMove = useCallback(
     (e: React.TouchEvent) => {
-      e.preventDefault()
       if (e.touches.length === 2 && pinchRef.current) {
         // ピンチズーム
         const dist = pinchDist(e.touches[0], e.touches[1])
