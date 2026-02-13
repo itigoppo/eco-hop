@@ -32,6 +32,7 @@ const PAD = 20
 const INITIAL_SCALE = 3
 const MIN_SCALE = 1
 const MAX_SCALE = 5
+const PAN_LIMIT = SVG_W
 
 /** 経度・緯度 → SVG座標に変換 */
 function project(lon: number, lat: number): { x: number; y: number } {
@@ -165,14 +166,13 @@ export function RouteMap({
     (e: React.MouseEvent) => {
       if (!dragRef.current || !svgRef.current) return
       const rect = svgRef.current.getBoundingClientRect()
+      if (rect.width === 0 || rect.height === 0) return
       // マウス移動量をSVG座標系に変換
       const dx = ((e.clientX - dragRef.current.startX) / rect.width) * (SVG_W / view.scale)
       const dy = ((e.clientY - dragRef.current.startY) / rect.height) * (SVG_H / view.scale)
-      setView((v) => ({
-        ...v,
-        tx: dragRef.current!.startTx + dx,
-        ty: dragRef.current!.startTy + dy,
-      }))
+      const newTx = Math.max(-PAN_LIMIT, Math.min(PAN_LIMIT, dragRef.current.startTx + dx))
+      const newTy = Math.max(-PAN_LIMIT, Math.min(PAN_LIMIT, dragRef.current.startTy + dy))
+      setView((v) => ({ ...v, tx: newTx, ty: newTy }))
     },
     [view.scale]
   )
@@ -216,6 +216,7 @@ export function RouteMap({
       if (e.touches.length === 2 && pinchRef.current) {
         // ピンチズーム
         const dist = pinchDist(e.touches[0], e.touches[1])
+        if (pinchRef.current.startDist === 0) return
         const newScale = Math.min(
           MAX_SCALE,
           Math.max(MIN_SCALE, pinchRef.current.startScale * (dist / pinchRef.current.startDist))
@@ -224,15 +225,14 @@ export function RouteMap({
       } else if (e.touches.length === 1 && dragRef.current && svgRef.current) {
         // ドラッグ
         const rect = svgRef.current.getBoundingClientRect()
+        if (rect.width === 0 || rect.height === 0) return
         const dx =
           ((e.touches[0].clientX - dragRef.current.startX) / rect.width) * (SVG_W / view.scale)
         const dy =
           ((e.touches[0].clientY - dragRef.current.startY) / rect.height) * (SVG_H / view.scale)
-        setView((v) => ({
-          ...v,
-          tx: dragRef.current!.startTx + dx,
-          ty: dragRef.current!.startTy + dy,
-        }))
+        const newTx = Math.max(-PAN_LIMIT, Math.min(PAN_LIMIT, dragRef.current.startTx + dx))
+        const newTy = Math.max(-PAN_LIMIT, Math.min(PAN_LIMIT, dragRef.current.startTy + dy))
+        setView((v) => ({ ...v, tx: newTx, ty: newTy }))
       }
     },
     [view.scale]
