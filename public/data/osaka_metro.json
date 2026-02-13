@@ -1,0 +1,2301 @@
+{
+  "company": {
+    "company_cd": "249",
+    "name": "Osaka Metro"
+  },
+  "lines": [
+    {
+      "line_cd": "99618",
+      "name": "御堂筋線",
+      "name_en": "Midosuji Line",
+      "color": "#e5171f",
+      "stations": [
+        {
+          "station_cd": "9961801",
+          "station_g_cd": "9961404",
+          "name": "江坂",
+          "station_number": "M11",
+          "name_kana": "えさか",
+          "name_en": "Esaka",
+          "lon": 135.497106,
+          "lat": 34.758755
+        },
+        {
+          "station_cd": "9961802",
+          "station_g_cd": "9961802",
+          "name": "東三国",
+          "station_number": "M12",
+          "name_kana": "ひがしみくに",
+          "name_en": "Higashimikuni",
+          "lon": 135.498496,
+          "lat": 34.741052
+        },
+        {
+          "station_cd": "9961803",
+          "station_g_cd": "1160213",
+          "name": "新大阪",
+          "station_number": "M13",
+          "name_kana": "しんおおさか",
+          "name_en": "Shin-Osaka",
+          "lon": 135.498558,
+          "lat": 34.732919
+        },
+        {
+          "station_cd": "9961804",
+          "station_g_cd": "3400324",
+          "name": "西中島南方",
+          "station_number": "M14",
+          "name_kana": "にしなかじまみなみかた",
+          "name_en": "Nishinakajima-Minamikata",
+          "lon": 135.498579,
+          "lat": 34.726584
+        },
+        {
+          "station_cd": "9961805",
+          "station_g_cd": "9961805",
+          "name": "中津",
+          "station_number": "M15",
+          "name_kana": "なかつ",
+          "name_en": "Nakatsu",
+          "lon": 135.496938,
+          "lat": 34.711191
+        },
+        {
+          "station_cd": "9961806",
+          "station_g_cd": "1160214",
+          "name": "梅田",
+          "station_number": "M16",
+          "name_kana": "うめだ",
+          "name_en": "Umeda",
+          "lon": 135.497496,
+          "lat": 34.703765
+        },
+        {
+          "station_cd": "9961807",
+          "station_g_cd": "3300140",
+          "name": "淀屋橋",
+          "station_number": "M17",
+          "name_kana": "よどやばし",
+          "name_en": "Yodoyabashi",
+          "lon": 135.500972,
+          "lat": 34.692289
+        },
+        {
+          "station_cd": "9961808",
+          "station_g_cd": "9961808",
+          "name": "本町",
+          "station_number": "M18",
+          "name_kana": "ほんまち",
+          "name_en": "Honmachi",
+          "lon": 135.498982,
+          "lat": 34.681936
+        },
+        {
+          "station_cd": "9961809",
+          "station_g_cd": "9961809",
+          "name": "心斎橋",
+          "station_number": "M19",
+          "name_kana": "しんさいばし",
+          "name_en": "Shinsaibashi",
+          "lon": 135.50033,
+          "lat": 34.675012
+        },
+        {
+          "station_cd": "9961810",
+          "station_g_cd": "3100101",
+          "name": "なんば",
+          "station_number": "M20",
+          "name_kana": "なんば",
+          "name_en": "Namba",
+          "lon": 135.500277,
+          "lat": 34.666316
+        },
+        {
+          "station_cd": "9961811",
+          "station_g_cd": "9961811",
+          "name": "大国町",
+          "station_number": "M21",
+          "name_kana": "だいこくちょう",
+          "name_en": "Daikokucho",
+          "lon": 135.4978,
+          "lat": 34.656075
+        },
+        {
+          "station_cd": "9961812",
+          "station_g_cd": "1160720",
+          "name": "動物園前",
+          "station_number": "M22",
+          "name_kana": "どうぶつえんまえ",
+          "name_en": "Dobutsuen-Mae",
+          "lon": 135.504413,
+          "lat": 34.648815
+        },
+        {
+          "station_cd": "9961813",
+          "station_g_cd": "1160719",
+          "name": "天王寺",
+          "station_number": "M23",
+          "name_kana": "てんのうじ",
+          "name_en": "Tennoji",
+          "lon": 135.51374,
+          "lat": 34.646554
+        },
+        {
+          "station_cd": "9961814",
+          "station_g_cd": "9961814",
+          "name": "昭和町",
+          "station_number": "M24",
+          "name_kana": "しょうわちょう",
+          "name_en": "Showacho",
+          "lon": 135.516954,
+          "lat": 34.633564
+        },
+        {
+          "station_cd": "9961815",
+          "station_g_cd": "9961815",
+          "name": "西田辺",
+          "station_number": "M25",
+          "name_kana": "にしたなべ",
+          "name_en": "Nishitanabe",
+          "lon": 135.515152,
+          "lat": 34.621627
+        },
+        {
+          "station_cd": "9961816",
+          "station_g_cd": "1162605",
+          "name": "長居",
+          "station_number": "M26",
+          "name_kana": "ながい",
+          "name_en": "Nagai",
+          "lon": 135.513761,
+          "lat": 34.609873
+        },
+        {
+          "station_cd": "9961817",
+          "station_g_cd": "9961817",
+          "name": "あびこ",
+          "station_number": "M27",
+          "name_kana": "あびこ",
+          "name_en": "Abiko",
+          "lon": 135.512747,
+          "lat": 34.598821
+        },
+        {
+          "station_cd": "9961818",
+          "station_g_cd": "9961818",
+          "name": "北花田",
+          "station_number": "M28",
+          "name_kana": "きたはなだ",
+          "name_en": "Kitahanada",
+          "lon": 135.516469,
+          "lat": 34.581873
+        },
+        {
+          "station_cd": "9961819",
+          "station_g_cd": "9961819",
+          "name": "新金岡",
+          "station_number": "M29",
+          "name_kana": "しんかなおか",
+          "name_en": "Shinkanaoka",
+          "lon": 135.514864,
+          "lat": 34.567447
+        },
+        {
+          "station_cd": "9961820",
+          "station_g_cd": "3200715",
+          "name": "なかもず",
+          "station_number": "M30",
+          "name_kana": "なかもず",
+          "name_en": "Nakamozu",
+          "lon": 135.50579,
+          "lat": 34.55607
+        }
+      ],
+      "connections": [
+        {
+          "from": "9961801",
+          "to": "9961802"
+        },
+        {
+          "from": "9961802",
+          "to": "9961803"
+        },
+        {
+          "from": "9961803",
+          "to": "9961804"
+        },
+        {
+          "from": "9961804",
+          "to": "9961805"
+        },
+        {
+          "from": "9961805",
+          "to": "9961806"
+        },
+        {
+          "from": "9961806",
+          "to": "9961807"
+        },
+        {
+          "from": "9961807",
+          "to": "9961808"
+        },
+        {
+          "from": "9961808",
+          "to": "9961809"
+        },
+        {
+          "from": "9961809",
+          "to": "9961810"
+        },
+        {
+          "from": "9961810",
+          "to": "9961811"
+        },
+        {
+          "from": "9961811",
+          "to": "9961812"
+        },
+        {
+          "from": "9961812",
+          "to": "9961813"
+        },
+        {
+          "from": "9961813",
+          "to": "9961814"
+        },
+        {
+          "from": "9961814",
+          "to": "9961815"
+        },
+        {
+          "from": "9961815",
+          "to": "9961816"
+        },
+        {
+          "from": "9961816",
+          "to": "9961817"
+        },
+        {
+          "from": "9961817",
+          "to": "9961818"
+        },
+        {
+          "from": "9961818",
+          "to": "9961819"
+        },
+        {
+          "from": "9961819",
+          "to": "9961820"
+        }
+      ]
+    },
+    {
+      "line_cd": "99619",
+      "name": "谷町線",
+      "name_en": "Tanimachi Line",
+      "color": "#522886",
+      "stations": [
+        {
+          "station_cd": "9961901",
+          "station_g_cd": "9961901",
+          "name": "大日",
+          "station_number": "T11",
+          "name_kana": "だいにち",
+          "name_en": "Dainichi",
+          "lon": 135.578241,
+          "lat": 34.749476
+        },
+        {
+          "station_cd": "9961902",
+          "station_g_cd": "9961902",
+          "name": "守口",
+          "station_number": "T12",
+          "name_kana": "もりぐち",
+          "name_en": "Moriguchi",
+          "lon": 135.563851,
+          "lat": 34.737973
+        },
+        {
+          "station_cd": "9961903",
+          "station_g_cd": "9961903",
+          "name": "太子橋今市",
+          "station_number": "T13",
+          "name_kana": "たいしばしいまいち",
+          "name_en": "Taishibashi-Imaichi",
+          "lon": 135.55493,
+          "lat": 34.731376
+        },
+        {
+          "station_cd": "9961904",
+          "station_g_cd": "9961904",
+          "name": "千林大宮",
+          "station_number": "T14",
+          "name_kana": "せんばやしおおみや",
+          "name_en": "Sembayashi-Omiya",
+          "lon": 135.54913,
+          "lat": 34.723808
+        },
+        {
+          "station_cd": "9961905",
+          "station_g_cd": "9961905",
+          "name": "関目高殿",
+          "station_number": "T15",
+          "name_kana": "せきめたかどの",
+          "name_en": "Sekime-Takadono",
+          "lon": 135.545797,
+          "lat": 34.715197
+        },
+        {
+          "station_cd": "9961906",
+          "station_g_cd": "9961906",
+          "name": "野江内代",
+          "station_number": "T16",
+          "name_kana": "のえうちんだい",
+          "name_en": "Noe-Uchindai",
+          "lon": 135.538137,
+          "lat": 34.708951
+        },
+        {
+          "station_cd": "9961907",
+          "station_g_cd": "9961907",
+          "name": "都島",
+          "station_number": "T17",
+          "name_kana": "みやこじま",
+          "name_en": "Miyakojima",
+          "lon": 135.525799,
+          "lat": 34.709087
+        },
+        {
+          "station_cd": "9961908",
+          "station_g_cd": "3400811",
+          "name": "天神橋筋六丁目",
+          "station_number": "T18",
+          "name_kana": "てんじんばしすじろくちょうめ",
+          "name_en": "Tenjimbashisuji 6-Chome",
+          "lon": 135.511283,
+          "lat": 34.710776
+        },
+        {
+          "station_cd": "9961909",
+          "station_g_cd": "9961909",
+          "name": "中崎町",
+          "station_number": "T19",
+          "name_kana": "なかざきちょう",
+          "name_en": "Nakazakicho",
+          "lon": 135.505245,
+          "lat": 34.706864
+        },
+        {
+          "station_cd": "9961910",
+          "station_g_cd": "1160214",
+          "name": "東梅田",
+          "station_number": "T20",
+          "name_kana": "ひがしうめだ",
+          "name_en": "Higashi-Umeda",
+          "lon": 135.49969,
+          "lat": 34.701031
+        },
+        {
+          "station_cd": "9961911",
+          "station_g_cd": "1162503",
+          "name": "南森町",
+          "station_number": "T21",
+          "name_kana": "みなみもりまち",
+          "name_en": "Minamimorimachi",
+          "lon": 135.511078,
+          "lat": 34.697699
+        },
+        {
+          "station_cd": "9961912",
+          "station_g_cd": "3300138",
+          "name": "天満橋",
+          "station_number": "T22",
+          "name_kana": "てんまばし",
+          "name_en": "Temmabashi",
+          "lon": 135.517371,
+          "lat": 34.689457
+        },
+        {
+          "station_cd": "9961913",
+          "station_g_cd": "9961913",
+          "name": "谷町四丁目",
+          "station_number": "T23",
+          "name_kana": "たにまちよんちょうめ",
+          "name_en": "Tanimachi 4-Chome",
+          "lon": 135.517253,
+          "lat": 34.681914
+        },
+        {
+          "station_cd": "9961914",
+          "station_g_cd": "9961914",
+          "name": "谷町六丁目",
+          "station_number": "T24",
+          "name_kana": "たにまちろくちょうめ",
+          "name_en": "Tanimachi 6-Chome",
+          "lon": 135.516912,
+          "lat": 34.674923
+        },
+        {
+          "station_cd": "9961915",
+          "station_g_cd": "9961915",
+          "name": "谷町九丁目",
+          "station_number": "T25",
+          "name_kana": "たにまちきゅうちょうめ",
+          "name_en": "Tanimachi 9-Chome",
+          "lon": 135.515801,
+          "lat": 34.667146
+        },
+        {
+          "station_cd": "9961916",
+          "station_g_cd": "9961916",
+          "name": "四天王寺前夕陽ヶ丘",
+          "station_number": "T26",
+          "name_kana": "してんのうじまえゆうひがおか",
+          "name_en": "Shitennoji-mae Yuhigaoka",
+          "lon": 135.514134,
+          "lat": 34.658536
+        },
+        {
+          "station_cd": "9961917",
+          "station_g_cd": "1160719",
+          "name": "天王寺",
+          "station_number": "T27",
+          "name_kana": "てんのうじ",
+          "name_en": "Tennoji",
+          "lon": 135.51316,
+          "lat": 34.647675
+        },
+        {
+          "station_cd": "9961918",
+          "station_g_cd": "9961918",
+          "name": "阿倍野",
+          "station_number": "T28",
+          "name_kana": "あべの",
+          "name_en": "Abeno",
+          "lon": 135.51198,
+          "lat": 34.642374
+        },
+        {
+          "station_cd": "9961919",
+          "station_g_cd": "9961919",
+          "name": "文の里",
+          "station_number": "T29",
+          "name_kana": "ふみのさと",
+          "name_en": "Fuminosato",
+          "lon": 135.518024,
+          "lat": 34.636039
+        },
+        {
+          "station_cd": "9961920",
+          "station_g_cd": "9961920",
+          "name": "田辺",
+          "station_number": "T30",
+          "name_kana": "たなべ",
+          "name_en": "Tanabe",
+          "lon": 135.525515,
+          "lat": 34.628215
+        },
+        {
+          "station_cd": "9961921",
+          "station_g_cd": "9961921",
+          "name": "駒川中野",
+          "station_number": "T31",
+          "name_kana": "こまがわなかの",
+          "name_en": "Komagawa-Nakano",
+          "lon": 135.533036,
+          "lat": 34.621507
+        },
+        {
+          "station_cd": "9961922",
+          "station_g_cd": "9961922",
+          "name": "平野",
+          "station_number": "T32",
+          "name_kana": "ひらの",
+          "name_en": "Hirano",
+          "lon": 135.548887,
+          "lat": 34.621078
+        },
+        {
+          "station_cd": "9961923",
+          "station_g_cd": "9961923",
+          "name": "喜連瓜破",
+          "station_number": "T33",
+          "name_kana": "きれうりわり",
+          "name_en": "Kire-Uriwari",
+          "lon": 135.551633,
+          "lat": 34.609376
+        },
+        {
+          "station_cd": "9961924",
+          "station_g_cd": "9961924",
+          "name": "出戸",
+          "station_number": "T34",
+          "name_kana": "でと",
+          "name_en": "Deto",
+          "lon": 135.565801,
+          "lat": 34.609012
+        },
+        {
+          "station_cd": "9961925",
+          "station_g_cd": "9961925",
+          "name": "長原",
+          "station_number": "T35",
+          "name_kana": "ながはら",
+          "name_en": "Nagahara",
+          "lon": 135.573853,
+          "lat": 34.602432
+        },
+        {
+          "station_cd": "9961926",
+          "station_g_cd": "9961926",
+          "name": "八尾南",
+          "station_number": "T36",
+          "name_kana": "やおみなみ",
+          "name_en": "Yaominami",
+          "lon": 135.582464,
+          "lat": 34.597433
+        }
+      ],
+      "connections": [
+        {
+          "from": "9961901",
+          "to": "9961902"
+        },
+        {
+          "from": "9961902",
+          "to": "9961903"
+        },
+        {
+          "from": "9961903",
+          "to": "9961904"
+        },
+        {
+          "from": "9961904",
+          "to": "9961905"
+        },
+        {
+          "from": "9961905",
+          "to": "9961906"
+        },
+        {
+          "from": "9961906",
+          "to": "9961907"
+        },
+        {
+          "from": "9961907",
+          "to": "9961908"
+        },
+        {
+          "from": "9961908",
+          "to": "9961909"
+        },
+        {
+          "from": "9961909",
+          "to": "9961910"
+        },
+        {
+          "from": "9961910",
+          "to": "9961911"
+        },
+        {
+          "from": "9961911",
+          "to": "9961912"
+        },
+        {
+          "from": "9961912",
+          "to": "9961913"
+        },
+        {
+          "from": "9961913",
+          "to": "9961914"
+        },
+        {
+          "from": "9961914",
+          "to": "9961915"
+        },
+        {
+          "from": "9961915",
+          "to": "9961916"
+        },
+        {
+          "from": "9961916",
+          "to": "9961917"
+        },
+        {
+          "from": "9961917",
+          "to": "9961918"
+        },
+        {
+          "from": "9961918",
+          "to": "9961919"
+        },
+        {
+          "from": "9961919",
+          "to": "9961920"
+        },
+        {
+          "from": "9961920",
+          "to": "9961921"
+        },
+        {
+          "from": "9961921",
+          "to": "9961922"
+        },
+        {
+          "from": "9961922",
+          "to": "9961923"
+        },
+        {
+          "from": "9961923",
+          "to": "9961924"
+        },
+        {
+          "from": "9961924",
+          "to": "9961925"
+        },
+        {
+          "from": "9961925",
+          "to": "9961926"
+        }
+      ]
+    },
+    {
+      "line_cd": "99620",
+      "name": "四つ橋線",
+      "name_en": "Yotsubashi Line",
+      "color": "#0078ba",
+      "stations": [
+        {
+          "station_cd": "9962001",
+          "station_g_cd": "1160214",
+          "name": "西梅田",
+          "station_number": "Y11",
+          "name_kana": "にしうめだ",
+          "name_en": "Nishi-Umeda",
+          "lon": 135.495802,
+          "lat": 34.699642
+        },
+        {
+          "station_cd": "9962002",
+          "station_g_cd": "3300804",
+          "name": "肥後橋",
+          "station_number": "Y12",
+          "name_kana": "ひごばし",
+          "name_en": "Higobashi",
+          "lon": 135.496388,
+          "lat": 34.691355
+        },
+        {
+          "station_cd": "9962003",
+          "station_g_cd": "9961808",
+          "name": "本町",
+          "station_number": "Y13",
+          "name_kana": "ほんまち",
+          "name_en": "Hommachi",
+          "lon": 135.498982,
+          "lat": 34.681936
+        },
+        {
+          "station_cd": "9962004",
+          "station_g_cd": "9962004",
+          "name": "四ツ橋",
+          "station_number": "Y14",
+          "name_kana": "よつばし",
+          "name_en": "Yotsubashi",
+          "lon": 135.496783,
+          "lat": 34.674112
+        },
+        {
+          "station_cd": "9962005",
+          "station_g_cd": "3100101",
+          "name": "なんば",
+          "station_number": "Y15",
+          "name_kana": "なんば",
+          "name_en": "Namba",
+          "lon": 135.497539,
+          "lat": 34.666402
+        },
+        {
+          "station_cd": "9962006",
+          "station_g_cd": "9961811",
+          "name": "大国町",
+          "station_number": "Y16",
+          "name_kana": "だいこくちょう",
+          "name_en": "Daikokucho",
+          "lon": 135.4978,
+          "lat": 34.656075
+        },
+        {
+          "station_cd": "9962007",
+          "station_g_cd": "9962007",
+          "name": "花園町",
+          "station_number": "Y17",
+          "name_kana": "はなぞのちょう",
+          "name_en": "Hanazonocho",
+          "lon": 135.496636,
+          "lat": 34.644371
+        },
+        {
+          "station_cd": "9962008",
+          "station_g_cd": "9962008",
+          "name": "岸里",
+          "station_number": "Y18",
+          "name_kana": "きしのさと",
+          "name_en": "Kishinosato",
+          "lon": 135.493859,
+          "lat": 34.634372
+        },
+        {
+          "station_cd": "9962009",
+          "station_g_cd": "9962009",
+          "name": "玉出",
+          "station_number": "Y19",
+          "name_kana": "たまで",
+          "name_en": "Tamade",
+          "lon": 135.490527,
+          "lat": 34.624096
+        },
+        {
+          "station_cd": "9962010",
+          "station_g_cd": "9962010",
+          "name": "北加賀屋",
+          "station_number": "Y20",
+          "name_kana": "きたかがや",
+          "name_en": "Kitakagaya",
+          "lon": 135.478861,
+          "lat": 34.621318
+        },
+        {
+          "station_cd": "9962011",
+          "station_g_cd": "9962011",
+          "name": "住之江公園",
+          "station_number": "Y21",
+          "name_kana": "すみのえこうえん",
+          "name_en": "Suminoekoen",
+          "lon": 135.471879,
+          "lat": 34.609269
+        }
+      ],
+      "connections": [
+        {
+          "from": "9962001",
+          "to": "9962002"
+        },
+        {
+          "from": "9962002",
+          "to": "9962003"
+        },
+        {
+          "from": "9962003",
+          "to": "9962004"
+        },
+        {
+          "from": "9962004",
+          "to": "9962005"
+        },
+        {
+          "from": "9962005",
+          "to": "9962006"
+        },
+        {
+          "from": "9962006",
+          "to": "9962007"
+        },
+        {
+          "from": "9962007",
+          "to": "9962008"
+        },
+        {
+          "from": "9962008",
+          "to": "9962009"
+        },
+        {
+          "from": "9962009",
+          "to": "9962010"
+        },
+        {
+          "from": "9962010",
+          "to": "9962011"
+        }
+      ]
+    },
+    {
+      "line_cd": "99621",
+      "name": "中央線",
+      "name_en": "Chuo Line",
+      "color": "#019a66",
+      "stations": [
+        {
+          "station_cd": "9962101",
+          "station_g_cd": "9962101",
+          "name": "コスモスクエア",
+          "station_number": "C10",
+          "name_kana": "こすもすくえあ",
+          "name_en": "Cosmosquare",
+          "lon": 135.412472,
+          "lat": 34.642888
+        },
+        {
+          "station_cd": "9962102",
+          "station_g_cd": "9962102",
+          "name": "大阪港",
+          "station_number": "C11",
+          "name_kana": "おおさかこう",
+          "name_en": "Osakako",
+          "lon": 135.434336,
+          "lat": 34.65388
+        },
+        {
+          "station_cd": "9962103",
+          "station_g_cd": "9962103",
+          "name": "朝潮橋",
+          "station_number": "C12",
+          "name_kana": "あさしおばし",
+          "name_en": "Asashiobashi",
+          "lon": 135.448863,
+          "lat": 34.661035
+        },
+        {
+          "station_cd": "9962104",
+          "station_g_cd": "1162306",
+          "name": "弁天町",
+          "station_number": "C13",
+          "name_kana": "べんてんちょう",
+          "name_en": "Bentencho",
+          "lon": 135.462381,
+          "lat": 34.668547
+        },
+        {
+          "station_cd": "9962105",
+          "station_g_cd": "3500208",
+          "name": "九条",
+          "station_number": "C14",
+          "name_kana": "くじょう",
+          "name_en": "Kujo",
+          "lon": 135.473749,
+          "lat": 34.675492
+        },
+        {
+          "station_cd": "9962106",
+          "station_g_cd": "9962106",
+          "name": "阿波座",
+          "station_number": "C15",
+          "name_kana": "あわざ",
+          "name_en": "Awaza",
+          "lon": 135.486297,
+          "lat": 34.681483
+        },
+        {
+          "station_cd": "9962107",
+          "station_g_cd": "9961808",
+          "name": "本町",
+          "station_number": "C16",
+          "name_kana": "ほんまち",
+          "name_en": "Hommachi",
+          "lon": 135.498982,
+          "lat": 34.681936
+        },
+        {
+          "station_cd": "9962108",
+          "station_g_cd": "9962108",
+          "name": "堺筋本町",
+          "station_number": "C17",
+          "name_kana": "さかいすじほんまち",
+          "name_en": "Sakaisuji-Hommachi",
+          "lon": 135.506912,
+          "lat": 34.681867
+        },
+        {
+          "station_cd": "9962109",
+          "station_g_cd": "9961913",
+          "name": "谷町四丁目",
+          "station_number": "C18",
+          "name_kana": "たにまちよんちょうめ",
+          "name_en": "Tanimachi 4-Chome",
+          "lon": 135.517253,
+          "lat": 34.681914
+        },
+        {
+          "station_cd": "9962110",
+          "station_g_cd": "1162315",
+          "name": "森ノ宮",
+          "station_number": "C19",
+          "name_kana": "もりのみや",
+          "name_en": "Morinomiya",
+          "lon": 135.532687,
+          "lat": 34.681508
+        },
+        {
+          "station_cd": "9962111",
+          "station_g_cd": "9962111",
+          "name": "緑橋",
+          "station_number": "C20",
+          "name_kana": "みどりばし",
+          "name_en": "Midoribashi",
+          "lon": 135.545242,
+          "lat": 34.680756
+        },
+        {
+          "station_cd": "9962112",
+          "station_g_cd": "9962112",
+          "name": "深江橋",
+          "station_number": "C21",
+          "name_kana": "ふかえばし",
+          "name_en": "Fukaebashi",
+          "lon": 135.557186,
+          "lat": 34.67909
+        },
+        {
+          "station_cd": "9962113",
+          "station_g_cd": "1164102",
+          "name": "高井田",
+          "station_number": "C22",
+          "name_kana": "たかいだ",
+          "name_en": "Takada",
+          "lon": 135.573028,
+          "lat": 34.678575
+        },
+        {
+          "station_cd": "9962114",
+          "station_g_cd": "3102301",
+          "name": "長田",
+          "station_number": "C23",
+          "name_kana": "ながた",
+          "name_en": "Nagata",
+          "lon": 135.591919,
+          "lat": 34.678747
+        }
+      ],
+      "connections": [
+        {
+          "from": "9962101",
+          "to": "9962102"
+        },
+        {
+          "from": "9962102",
+          "to": "9962103"
+        },
+        {
+          "from": "9962103",
+          "to": "9962104"
+        },
+        {
+          "from": "9962104",
+          "to": "9962105"
+        },
+        {
+          "from": "9962105",
+          "to": "9962106"
+        },
+        {
+          "from": "9962106",
+          "to": "9962107"
+        },
+        {
+          "from": "9962107",
+          "to": "9962108"
+        },
+        {
+          "from": "9962108",
+          "to": "9962109"
+        },
+        {
+          "from": "9962109",
+          "to": "9962110"
+        },
+        {
+          "from": "9962110",
+          "to": "9962111"
+        },
+        {
+          "from": "9962111",
+          "to": "9962112"
+        },
+        {
+          "from": "9962112",
+          "to": "9962113"
+        },
+        {
+          "from": "9962113",
+          "to": "9962114"
+        }
+      ]
+    },
+    {
+      "line_cd": "99622",
+      "name": "千日前線",
+      "name_en": "Sennichimae Line",
+      "color": "#e44d93",
+      "stations": [
+        {
+          "station_cd": "9962201",
+          "station_g_cd": "1162506",
+          "name": "野田阪神",
+          "station_number": "S11",
+          "name_kana": "のだはんしん",
+          "name_en": "Nodahanshin",
+          "lon": 135.476031,
+          "lat": 34.694384
+        },
+        {
+          "station_cd": "9962202",
+          "station_g_cd": "1162308",
+          "name": "玉川",
+          "station_number": "S12",
+          "name_kana": "たまがわ",
+          "name_en": "Tamagawa",
+          "lon": 135.476187,
+          "lat": 34.689607
+        },
+        {
+          "station_cd": "9962203",
+          "station_g_cd": "9962106",
+          "name": "阿波座",
+          "station_number": "S13",
+          "name_kana": "あわざ",
+          "name_en": "Awaza",
+          "lon": 135.486297,
+          "lat": 34.681483
+        },
+        {
+          "station_cd": "9962204",
+          "station_g_cd": "9962204",
+          "name": "西長堀",
+          "station_number": "S14",
+          "name_kana": "にしながほり",
+          "name_en": "Nishinagahori",
+          "lon": 135.487223,
+          "lat": 34.675256
+        },
+        {
+          "station_cd": "9962205",
+          "station_g_cd": "3200901",
+          "name": "桜川",
+          "station_number": "S15",
+          "name_kana": "さくらがわ",
+          "name_en": "Sakuragawa",
+          "lon": 135.488839,
+          "lat": 34.668427
+        },
+        {
+          "station_cd": "9962206",
+          "station_g_cd": "3100101",
+          "name": "なんば",
+          "station_number": "S16",
+          "name_kana": "なんば",
+          "name_en": "Namba",
+          "lon": 135.499599,
+          "lat": 34.667205
+        },
+        {
+          "station_cd": "9962207",
+          "station_g_cd": "3100102",
+          "name": "日本橋",
+          "station_number": "S17",
+          "name_kana": "にっぽんばし",
+          "name_en": "Nippombashi",
+          "lon": 135.506635,
+          "lat": 34.667146
+        },
+        {
+          "station_cd": "9962208",
+          "station_g_cd": "9961915",
+          "name": "谷町九丁目",
+          "station_number": "S18",
+          "name_kana": "たにまちきゅうちょうめ",
+          "name_en": "Tanimachi 9-Chome",
+          "lon": 135.515801,
+          "lat": 34.667146
+        },
+        {
+          "station_cd": "9962209",
+          "station_g_cd": "1162317",
+          "name": "鶴橋",
+          "station_number": "S19",
+          "name_kana": "つるはし",
+          "name_en": "Tsuruhashi",
+          "lon": 135.529393,
+          "lat": 34.666032
+        },
+        {
+          "station_cd": "9962210",
+          "station_g_cd": "9962210",
+          "name": "今里",
+          "station_number": "S20",
+          "name_kana": "いまざと",
+          "name_en": "Imazato",
+          "lon": 135.544274,
+          "lat": 34.668617
+        },
+        {
+          "station_cd": "9962211",
+          "station_g_cd": "9962211",
+          "name": "新深江",
+          "station_number": "S21",
+          "name_kana": "しんふかえ",
+          "name_en": "Shin-Fukae",
+          "lon": 135.553836,
+          "lat": 34.668158
+        },
+        {
+          "station_cd": "9962212",
+          "station_g_cd": "9962212",
+          "name": "小路",
+          "station_number": "S22",
+          "name_kana": "しょうじ",
+          "name_en": "Shoji",
+          "lon": 135.556245,
+          "lat": 34.661531
+        },
+        {
+          "station_cd": "9962213",
+          "station_g_cd": "9962213",
+          "name": "北巽",
+          "station_number": "S23",
+          "name_kana": "きたたつみ",
+          "name_en": "Kita-Tatsumi",
+          "lon": 135.554964,
+          "lat": 34.652982
+        },
+        {
+          "station_cd": "9962214",
+          "station_g_cd": "9962214",
+          "name": "南巽",
+          "station_number": "S24",
+          "name_kana": "みなみたつみ",
+          "name_en": "Minami-Tatsumi",
+          "lon": 135.553298,
+          "lat": 34.643261
+        }
+      ],
+      "connections": [
+        {
+          "from": "9962201",
+          "to": "9962202"
+        },
+        {
+          "from": "9962202",
+          "to": "9962203"
+        },
+        {
+          "from": "9962203",
+          "to": "9962204"
+        },
+        {
+          "from": "9962204",
+          "to": "9962205"
+        },
+        {
+          "from": "9962205",
+          "to": "9962206"
+        },
+        {
+          "from": "9962206",
+          "to": "9962207"
+        },
+        {
+          "from": "9962207",
+          "to": "9962208"
+        },
+        {
+          "from": "9962208",
+          "to": "9962209"
+        },
+        {
+          "from": "9962209",
+          "to": "9962210"
+        },
+        {
+          "from": "9962210",
+          "to": "9962211"
+        },
+        {
+          "from": "9962211",
+          "to": "9962212"
+        },
+        {
+          "from": "9962212",
+          "to": "9962213"
+        },
+        {
+          "from": "9962213",
+          "to": "9962214"
+        }
+      ]
+    },
+    {
+      "line_cd": "99623",
+      "name": "堺筋線",
+      "name_en": "Sakaisuji Line",
+      "color": "#814721",
+      "stations": [
+        {
+          "station_cd": "9962301",
+          "station_g_cd": "3400811",
+          "name": "天神橋筋六丁目",
+          "station_number": "K11",
+          "name_kana": "てんじんばしすじろくちょうめ",
+          "name_en": "Tenjimbashisuji 6-Chome",
+          "lon": 135.510757,
+          "lat": 34.710265
+        },
+        {
+          "station_cd": "9962302",
+          "station_g_cd": "1162311",
+          "name": "扇町",
+          "station_number": "K12",
+          "name_kana": "おうぎまち",
+          "name_en": "Ogimachi",
+          "lon": 135.5108,
+          "lat": 34.703809
+        },
+        {
+          "station_cd": "9962303",
+          "station_g_cd": "1162503",
+          "name": "南森町",
+          "station_number": "K13",
+          "name_kana": "みなみもりまち",
+          "name_en": "Minamimorimachi",
+          "lon": 135.511078,
+          "lat": 34.697699
+        },
+        {
+          "station_cd": "9962304",
+          "station_g_cd": "3300139",
+          "name": "北浜",
+          "station_number": "K14",
+          "name_kana": "きたはま",
+          "name_en": "Kitahama",
+          "lon": 135.506634,
+          "lat": 34.691588
+        },
+        {
+          "station_cd": "9962305",
+          "station_g_cd": "9962108",
+          "name": "堺筋本町",
+          "station_number": "K15",
+          "name_kana": "さかいすじほんまち",
+          "name_en": "Sakaisuji-Hommachi",
+          "lon": 135.506912,
+          "lat": 34.681867
+        },
+        {
+          "station_cd": "9962306",
+          "station_g_cd": "9962306",
+          "name": "長堀橋",
+          "station_number": "K16",
+          "name_kana": "ながほりばし",
+          "name_en": "Nagahoribashi",
+          "lon": 135.506357,
+          "lat": 34.674645
+        },
+        {
+          "station_cd": "9962307",
+          "station_g_cd": "3100102",
+          "name": "日本橋",
+          "station_number": "K17",
+          "name_kana": "にっぽんばし",
+          "name_en": "Nippombashi",
+          "lon": 135.506635,
+          "lat": 34.667146
+        },
+        {
+          "station_cd": "9962308",
+          "station_g_cd": "9962308",
+          "name": "恵美須町",
+          "station_number": "K18",
+          "name_kana": "えびすちょう",
+          "name_en": "Ebisucho",
+          "lon": 135.505575,
+          "lat": 34.65508
+        },
+        {
+          "station_cd": "9962309",
+          "station_g_cd": "1160720",
+          "name": "動物園前",
+          "station_number": "K19",
+          "name_kana": "どうぶつえんまえ",
+          "name_en": "Dobutsuen-Mae",
+          "lon": 135.504413,
+          "lat": 34.648815
+        },
+        {
+          "station_cd": "9962310",
+          "station_g_cd": "3200103",
+          "name": "天下茶屋",
+          "station_number": "K20",
+          "name_kana": "てんがちゃや",
+          "name_en": "Tengachaya",
+          "lon": 135.496673,
+          "lat": 34.636847
+        }
+      ],
+      "connections": [
+        {
+          "from": "9962301",
+          "to": "9962302"
+        },
+        {
+          "from": "9962302",
+          "to": "9962303"
+        },
+        {
+          "from": "9962303",
+          "to": "9962304"
+        },
+        {
+          "from": "9962304",
+          "to": "9962305"
+        },
+        {
+          "from": "9962305",
+          "to": "9962306"
+        },
+        {
+          "from": "9962306",
+          "to": "9962307"
+        },
+        {
+          "from": "9962307",
+          "to": "9962308"
+        },
+        {
+          "from": "9962308",
+          "to": "9962309"
+        },
+        {
+          "from": "9962309",
+          "to": "9962310"
+        }
+      ]
+    },
+    {
+      "line_cd": "99624",
+      "name": "長堀鶴見緑地線",
+      "name_en": "Nagahori Tsurumi-ryokuchi Line",
+      "color": "#a9cc51",
+      "stations": [
+        {
+          "station_cd": "9962401",
+          "station_g_cd": "1162305",
+          "name": "大正",
+          "station_number": "N11",
+          "name_kana": "たいしょう",
+          "name_en": "Taisho",
+          "lon": 135.478882,
+          "lat": 34.665855
+        },
+        {
+          "station_cd": "9962402",
+          "station_g_cd": "3500209",
+          "name": "ドーム前千代崎",
+          "station_number": "N12",
+          "name_kana": "どーむまえちよざき",
+          "name_en": "Dome-mae Chiyozaki",
+          "lon": 135.479415,
+          "lat": 34.670757
+        },
+        {
+          "station_cd": "9962403",
+          "station_g_cd": "9962204",
+          "name": "西長堀",
+          "station_number": "N13",
+          "name_kana": "にしながほり",
+          "name_en": "Nishinagahori",
+          "lon": 135.487223,
+          "lat": 34.675256
+        },
+        {
+          "station_cd": "9962404",
+          "station_g_cd": "9962404",
+          "name": "西大橋",
+          "station_number": "N14",
+          "name_kana": "にしおおはし",
+          "name_en": "Nishiohashi",
+          "lon": 135.493575,
+          "lat": 34.675442
+        },
+        {
+          "station_cd": "9962405",
+          "station_g_cd": "9961809",
+          "name": "心斎橋",
+          "station_number": "N15",
+          "name_kana": "しんさいばし",
+          "name_en": "Shinsaibashi",
+          "lon": 135.50033,
+          "lat": 34.675012
+        },
+        {
+          "station_cd": "9962406",
+          "station_g_cd": "9962306",
+          "name": "長堀橋",
+          "station_number": "N16",
+          "name_kana": "ながほりばし",
+          "name_en": "Nagahoribashi",
+          "lon": 135.506357,
+          "lat": 34.674645
+        },
+        {
+          "station_cd": "9962407",
+          "station_g_cd": "9962407",
+          "name": "松屋町",
+          "station_number": "N17",
+          "name_kana": "まつやまち",
+          "name_en": "Matsuyamachi",
+          "lon": 135.512467,
+          "lat": 34.675479
+        },
+        {
+          "station_cd": "9962408",
+          "station_g_cd": "9961914",
+          "name": "谷町六丁目",
+          "station_number": "N18",
+          "name_kana": "たにまちろくちょうめ",
+          "name_en": "Tanimachi 6-Chome",
+          "lon": 135.516912,
+          "lat": 34.674923
+        },
+        {
+          "station_cd": "9962409",
+          "station_g_cd": "1162316",
+          "name": "玉造",
+          "station_number": "N19",
+          "name_kana": "たまつくり",
+          "name_en": "Tamatsukuri",
+          "lon": 135.530251,
+          "lat": 34.674662
+        },
+        {
+          "station_cd": "9962410",
+          "station_g_cd": "1162315",
+          "name": "森ノ宮",
+          "station_number": "N20",
+          "name_kana": "もりのみや",
+          "name_en": "Morinomiya",
+          "lon": 135.533481,
+          "lat": 34.681861
+        },
+        {
+          "station_cd": "9962411",
+          "station_g_cd": "9962411",
+          "name": "大阪ビジネスパーク",
+          "station_number": "N21",
+          "name_kana": "おおさかびじねすぱーく",
+          "name_en": "Osaka Business Park",
+          "lon": 135.529688,
+          "lat": 34.692144
+        },
+        {
+          "station_cd": "9962412",
+          "station_g_cd": "1161724",
+          "name": "京橋",
+          "station_number": "N22",
+          "name_kana": "きょうばし",
+          "name_en": "Kyobashi",
+          "lon": 135.529962,
+          "lat": 34.696885
+        },
+        {
+          "station_cd": "9962413",
+          "station_g_cd": "9962413",
+          "name": "蒲生四丁目",
+          "station_number": "N23",
+          "name_kana": "がもうよんちょうめ",
+          "name_en": "Gamo 4-Chome",
+          "lon": 135.547709,
+          "lat": 34.700368
+        },
+        {
+          "station_cd": "9962414",
+          "station_g_cd": "9962414",
+          "name": "今福鶴見",
+          "station_number": "N24",
+          "name_kana": "いまふくつるみ",
+          "name_en": "Imafuku-Tsurumi",
+          "lon": 135.560044,
+          "lat": 34.701913
+        },
+        {
+          "station_cd": "9962415",
+          "station_g_cd": "9962415",
+          "name": "横堤",
+          "station_number": "N25",
+          "name_kana": "よこづつみ",
+          "name_en": "Yokozutsumi",
+          "lon": 135.57274,
+          "lat": 34.703532
+        },
+        {
+          "station_cd": "9962416",
+          "station_g_cd": "9962416",
+          "name": "鶴見緑地",
+          "station_number": "N26",
+          "name_kana": "つるみりょくち",
+          "name_en": "Tsurumi-ryokuchi",
+          "lon": 135.580239,
+          "lat": 34.710754
+        },
+        {
+          "station_cd": "9962417",
+          "station_g_cd": "9962417",
+          "name": "門真南",
+          "station_number": "N27",
+          "name_kana": "かどまみなみ",
+          "name_en": "Kadoma-minami",
+          "lon": 135.59246,
+          "lat": 34.716865
+        }
+      ],
+      "connections": [
+        {
+          "from": "9962401",
+          "to": "9962402"
+        },
+        {
+          "from": "9962402",
+          "to": "9962403"
+        },
+        {
+          "from": "9962403",
+          "to": "9962404"
+        },
+        {
+          "from": "9962404",
+          "to": "9962405"
+        },
+        {
+          "from": "9962405",
+          "to": "9962406"
+        },
+        {
+          "from": "9962406",
+          "to": "9962407"
+        },
+        {
+          "from": "9962407",
+          "to": "9962408"
+        },
+        {
+          "from": "9962408",
+          "to": "9962409"
+        },
+        {
+          "from": "9962409",
+          "to": "9962410"
+        },
+        {
+          "from": "9962410",
+          "to": "9962411"
+        },
+        {
+          "from": "9962411",
+          "to": "9962412"
+        },
+        {
+          "from": "9962412",
+          "to": "9962413"
+        },
+        {
+          "from": "9962413",
+          "to": "9962414"
+        },
+        {
+          "from": "9962414",
+          "to": "9962415"
+        },
+        {
+          "from": "9962415",
+          "to": "9962416"
+        },
+        {
+          "from": "9962416",
+          "to": "9962417"
+        }
+      ]
+    },
+    {
+      "line_cd": "99625",
+      "name": "南港ポートタウン線",
+      "name_en": "New Tram",
+      "color": "#00a0de",
+      "stations": [
+        {
+          "station_cd": "9962501",
+          "station_g_cd": "9962101",
+          "name": "コスモスクエア",
+          "station_number": "P09",
+          "name_kana": "こすもすくえあ",
+          "name_en": "Cosmosquare",
+          "lon": 135.412472,
+          "lat": 34.642888
+        },
+        {
+          "station_cd": "9962502",
+          "station_g_cd": "9962502",
+          "name": "トレードセンター前",
+          "station_number": "P10",
+          "name_kana": "とれーどせんたーまえ",
+          "name_en": "Trade Center-Mae",
+          "lon": 135.412336,
+          "lat": 34.63865
+        },
+        {
+          "station_cd": "9962503",
+          "station_g_cd": "9962503",
+          "name": "中ふ頭",
+          "station_number": "P11",
+          "name_kana": "なかふとう",
+          "name_en": "Nakafuto",
+          "lon": 135.417416,
+          "lat": 34.634091
+        },
+        {
+          "station_cd": "9962504",
+          "station_g_cd": "9962504",
+          "name": "ポートタウン西",
+          "station_number": "P12",
+          "name_kana": "ぽーとたうんにし",
+          "name_en": "Port Town-Nishi",
+          "lon": 135.422777,
+          "lat": 34.630899
+        },
+        {
+          "station_cd": "9962505",
+          "station_g_cd": "9962505",
+          "name": "ポートタウン東",
+          "station_number": "P13",
+          "name_kana": "ぽーとたうんひがし",
+          "name_en": "Port Town-Higashi",
+          "lon": 135.429085,
+          "lat": 34.630882
+        },
+        {
+          "station_cd": "9962506",
+          "station_g_cd": "9962506",
+          "name": "フェリーターミナル",
+          "station_number": "P14",
+          "name_kana": "ふぇりーたーみなる",
+          "name_en": "Ferry Terminal",
+          "lon": 135.434962,
+          "lat": 34.619253
+        },
+        {
+          "station_cd": "9962507",
+          "station_g_cd": "9962507",
+          "name": "南港東",
+          "station_number": "P15",
+          "name_kana": "なんこうひがし",
+          "name_en": "Nankohigashi",
+          "lon": 135.438607,
+          "lat": 34.613826
+        },
+        {
+          "station_cd": "9962508",
+          "station_g_cd": "9962508",
+          "name": "南港口",
+          "station_number": "P16",
+          "name_kana": "なんこうぐち",
+          "name_en": "Nankoguchi",
+          "lon": 135.445959,
+          "lat": 34.613826
+        },
+        {
+          "station_cd": "9962509",
+          "station_g_cd": "9962509",
+          "name": "平林",
+          "station_number": "P17",
+          "name_kana": "ひらばやし",
+          "name_en": "Hirabayashi",
+          "lon": 135.458585,
+          "lat": 34.610683
+        },
+        {
+          "station_cd": "9962510",
+          "station_g_cd": "9962011",
+          "name": "住之江公園",
+          "station_number": "P18",
+          "name_kana": "すみのえこうえん",
+          "name_en": "Suminoekoen",
+          "lon": 135.471879,
+          "lat": 34.609269
+        }
+      ],
+      "connections": [
+        {
+          "from": "9962501",
+          "to": "9962502"
+        },
+        {
+          "from": "9962502",
+          "to": "9962503"
+        },
+        {
+          "from": "9962503",
+          "to": "9962504"
+        },
+        {
+          "from": "9962504",
+          "to": "9962505"
+        },
+        {
+          "from": "9962505",
+          "to": "9962506"
+        },
+        {
+          "from": "9962506",
+          "to": "9962507"
+        },
+        {
+          "from": "9962507",
+          "to": "9962508"
+        },
+        {
+          "from": "9962508",
+          "to": "9962509"
+        },
+        {
+          "from": "9962509",
+          "to": "9962510"
+        }
+      ]
+    },
+    {
+      "line_cd": "99652",
+      "name": "今里筋線",
+      "name_en": "Imazatosuji Line",
+      "color": "#ee7b1a",
+      "stations": [
+        {
+          "station_cd": "9965201",
+          "station_g_cd": "9965201",
+          "name": "井高野",
+          "station_number": "I11",
+          "name_kana": "いたかの",
+          "name_en": "Itakano",
+          "lon": 135.5473208,
+          "lat": 34.75982037
+        },
+        {
+          "station_cd": "9965202",
+          "station_g_cd": "9965202",
+          "name": "瑞光四丁目",
+          "station_number": "I12",
+          "name_kana": "ずいこうよんちょうめ",
+          "name_en": "Zuiko 4-Chome",
+          "lon": 135.54467378327,
+          "lat": 34.752565249121
+        },
+        {
+          "station_cd": "9965203",
+          "station_g_cd": "9965203",
+          "name": "だいどう豊里",
+          "station_number": "I13",
+          "name_kana": "だいどうとよさと",
+          "name_en": "Daido-Toyosato",
+          "lon": 135.544408,
+          "lat": 34.743805
+        },
+        {
+          "station_cd": "9965204",
+          "station_g_cd": "9961903",
+          "name": "太子橋今市",
+          "station_number": "I14",
+          "name_kana": "たいしばしいまいち",
+          "name_en": "Taishibashi-Imaichi",
+          "lon": 135.55493,
+          "lat": 34.731376
+        },
+        {
+          "station_cd": "9965205",
+          "station_g_cd": "9965205",
+          "name": "清水",
+          "station_number": "I15",
+          "name_kana": "しみず",
+          "name_en": "Shimizu",
+          "lon": 135.56075843909,
+          "lat": 34.722061174119
+        },
+        {
+          "station_cd": "9965206",
+          "station_g_cd": "9965206",
+          "name": "新森古市",
+          "station_number": "I16",
+          "name_kana": "しんもりふるいち",
+          "name_en": "Shimmori-Furuichi",
+          "lon": 135.558296,
+          "lat": 34.715197
+        },
+        {
+          "station_cd": "9965207",
+          "station_g_cd": "3300135",
+          "name": "関目成育",
+          "station_number": "I17",
+          "name_kana": "せきめせいいく",
+          "name_en": "Sekime-Seiiku",
+          "lon": 135.546353,
+          "lat": 34.712975
+        },
+        {
+          "station_cd": "9965208",
+          "station_g_cd": "9962413",
+          "name": "蒲生四丁目",
+          "station_number": "I18",
+          "name_kana": "がもうよんちょうめ",
+          "name_en": "Gamo 4-Chome",
+          "lon": 135.547709,
+          "lat": 34.700368
+        },
+        {
+          "station_cd": "9965209",
+          "station_g_cd": "1161723",
+          "name": "鴫野",
+          "station_number": "I19",
+          "name_kana": "しぎの",
+          "name_en": "Shigino",
+          "lon": 135.545234,
+          "lat": 34.692605
+        },
+        {
+          "station_cd": "9965210",
+          "station_g_cd": "9962111",
+          "name": "緑橋",
+          "station_number": "I20",
+          "name_kana": "みどりばし",
+          "name_en": "Midoribashi",
+          "lon": 135.545242,
+          "lat": 34.680756
+        },
+        {
+          "station_cd": "9965211",
+          "station_g_cd": "9962210",
+          "name": "今里",
+          "station_number": "I21",
+          "name_kana": "いまざと",
+          "name_en": "Imazato",
+          "lon": 135.544274,
+          "lat": 34.668617
+        }
+      ],
+      "connections": [
+        {
+          "from": "9965201",
+          "to": "9965202"
+        },
+        {
+          "from": "9965202",
+          "to": "9965203"
+        },
+        {
+          "from": "9965203",
+          "to": "9965204"
+        },
+        {
+          "from": "9965204",
+          "to": "9965205"
+        },
+        {
+          "from": "9965205",
+          "to": "9965206"
+        },
+        {
+          "from": "9965206",
+          "to": "9965207"
+        },
+        {
+          "from": "9965207",
+          "to": "9965208"
+        },
+        {
+          "from": "9965208",
+          "to": "9965209"
+        },
+        {
+          "from": "9965209",
+          "to": "9965210"
+        },
+        {
+          "from": "9965210",
+          "to": "9965211"
+        }
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "station_g_cd": "1160214",
+      "stations": [
+        {
+          "station_cd": "9961806",
+          "line_cd": "99618",
+          "name": "梅田"
+        },
+        {
+          "station_cd": "9961910",
+          "line_cd": "99619",
+          "name": "東梅田"
+        },
+        {
+          "station_cd": "9962001",
+          "line_cd": "99620",
+          "name": "西梅田"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "1160719",
+      "stations": [
+        {
+          "station_cd": "9961813",
+          "line_cd": "99618",
+          "name": "天王寺"
+        },
+        {
+          "station_cd": "9961917",
+          "line_cd": "99619",
+          "name": "天王寺"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "1160720",
+      "stations": [
+        {
+          "station_cd": "9961812",
+          "line_cd": "99618",
+          "name": "動物園前"
+        },
+        {
+          "station_cd": "9962309",
+          "line_cd": "99623",
+          "name": "動物園前"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "1162315",
+      "stations": [
+        {
+          "station_cd": "9962110",
+          "line_cd": "99621",
+          "name": "森ノ宮"
+        },
+        {
+          "station_cd": "9962410",
+          "line_cd": "99624",
+          "name": "森ノ宮"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "1162503",
+      "stations": [
+        {
+          "station_cd": "9961911",
+          "line_cd": "99619",
+          "name": "南森町"
+        },
+        {
+          "station_cd": "9962303",
+          "line_cd": "99623",
+          "name": "南森町"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "3100101",
+      "stations": [
+        {
+          "station_cd": "9961810",
+          "line_cd": "99618",
+          "name": "なんば"
+        },
+        {
+          "station_cd": "9962005",
+          "line_cd": "99620",
+          "name": "なんば"
+        },
+        {
+          "station_cd": "9962206",
+          "line_cd": "99622",
+          "name": "なんば"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "3100102",
+      "stations": [
+        {
+          "station_cd": "9962207",
+          "line_cd": "99622",
+          "name": "日本橋"
+        },
+        {
+          "station_cd": "9962307",
+          "line_cd": "99623",
+          "name": "日本橋"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "3400811",
+      "stations": [
+        {
+          "station_cd": "9961908",
+          "line_cd": "99619",
+          "name": "天神橋筋六丁目"
+        },
+        {
+          "station_cd": "9962301",
+          "line_cd": "99623",
+          "name": "天神橋筋六丁目"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9961808",
+      "stations": [
+        {
+          "station_cd": "9961808",
+          "line_cd": "99618",
+          "name": "本町"
+        },
+        {
+          "station_cd": "9962003",
+          "line_cd": "99620",
+          "name": "本町"
+        },
+        {
+          "station_cd": "9962107",
+          "line_cd": "99621",
+          "name": "本町"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9961809",
+      "stations": [
+        {
+          "station_cd": "9961809",
+          "line_cd": "99618",
+          "name": "心斎橋"
+        },
+        {
+          "station_cd": "9962405",
+          "line_cd": "99624",
+          "name": "心斎橋"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9961811",
+      "stations": [
+        {
+          "station_cd": "9961811",
+          "line_cd": "99618",
+          "name": "大国町"
+        },
+        {
+          "station_cd": "9962006",
+          "line_cd": "99620",
+          "name": "大国町"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9961903",
+      "stations": [
+        {
+          "station_cd": "9961903",
+          "line_cd": "99619",
+          "name": "太子橋今市"
+        },
+        {
+          "station_cd": "9965204",
+          "line_cd": "99652",
+          "name": "太子橋今市"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9961913",
+      "stations": [
+        {
+          "station_cd": "9961913",
+          "line_cd": "99619",
+          "name": "谷町四丁目"
+        },
+        {
+          "station_cd": "9962109",
+          "line_cd": "99621",
+          "name": "谷町四丁目"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9961914",
+      "stations": [
+        {
+          "station_cd": "9961914",
+          "line_cd": "99619",
+          "name": "谷町六丁目"
+        },
+        {
+          "station_cd": "9962408",
+          "line_cd": "99624",
+          "name": "谷町六丁目"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9961915",
+      "stations": [
+        {
+          "station_cd": "9961915",
+          "line_cd": "99619",
+          "name": "谷町九丁目"
+        },
+        {
+          "station_cd": "9962208",
+          "line_cd": "99622",
+          "name": "谷町九丁目"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962011",
+      "stations": [
+        {
+          "station_cd": "9962011",
+          "line_cd": "99620",
+          "name": "住之江公園"
+        },
+        {
+          "station_cd": "9962510",
+          "line_cd": "99625",
+          "name": "住之江公園"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962101",
+      "stations": [
+        {
+          "station_cd": "9962101",
+          "line_cd": "99621",
+          "name": "コスモスクエア"
+        },
+        {
+          "station_cd": "9962501",
+          "line_cd": "99625",
+          "name": "コスモスクエア"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962106",
+      "stations": [
+        {
+          "station_cd": "9962106",
+          "line_cd": "99621",
+          "name": "阿波座"
+        },
+        {
+          "station_cd": "9962203",
+          "line_cd": "99622",
+          "name": "阿波座"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962108",
+      "stations": [
+        {
+          "station_cd": "9962108",
+          "line_cd": "99621",
+          "name": "堺筋本町"
+        },
+        {
+          "station_cd": "9962305",
+          "line_cd": "99623",
+          "name": "堺筋本町"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962111",
+      "stations": [
+        {
+          "station_cd": "9962111",
+          "line_cd": "99621",
+          "name": "緑橋"
+        },
+        {
+          "station_cd": "9965210",
+          "line_cd": "99652",
+          "name": "緑橋"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962204",
+      "stations": [
+        {
+          "station_cd": "9962204",
+          "line_cd": "99622",
+          "name": "西長堀"
+        },
+        {
+          "station_cd": "9962403",
+          "line_cd": "99624",
+          "name": "西長堀"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962210",
+      "stations": [
+        {
+          "station_cd": "9962210",
+          "line_cd": "99622",
+          "name": "今里"
+        },
+        {
+          "station_cd": "9965211",
+          "line_cd": "99652",
+          "name": "今里"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962306",
+      "stations": [
+        {
+          "station_cd": "9962306",
+          "line_cd": "99623",
+          "name": "長堀橋"
+        },
+        {
+          "station_cd": "9962406",
+          "line_cd": "99624",
+          "name": "長堀橋"
+        }
+      ]
+    },
+    {
+      "station_g_cd": "9962413",
+      "stations": [
+        {
+          "station_cd": "9962413",
+          "line_cd": "99624",
+          "name": "蒲生四丁目"
+        },
+        {
+          "station_cd": "9965208",
+          "line_cd": "99652",
+          "name": "蒲生四丁目"
+        }
+      ]
+    }
+  ]
+}

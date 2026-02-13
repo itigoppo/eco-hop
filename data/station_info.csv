@@ -1,0 +1,134 @@
+station_number,name,name_kana,name_en
+M11,江坂,えさか,Esaka
+M12,東三国,ひがしみくに,Higashimikuni
+M13,新大阪,しんおおさか,Shin-Osaka
+M14,西中島南方,にしなかじまみなみかた,Nishinakajima-Minamikata
+M15,中津,なかつ,Nakatsu
+M16,梅田,うめだ,Umeda
+M17,淀屋橋,よどやばし,Yodoyabashi
+M18,本町,ほんまち,Honmachi
+M19,心斎橋,しんさいばし,Shinsaibashi
+M20,なんば,なんば,Namba
+M21,大国町,だいこくちょう,Daikokucho
+M22,動物園前,どうぶつえんまえ,Dobutsuen-Mae
+M23,天王寺,てんのうじ,Tennoji
+M24,昭和町,しょうわちょう,Showacho
+M25,西田辺,にしたなべ,Nishitanabe
+M26,長居,ながい,Nagai
+M27,あびこ,あびこ,Abiko
+M28,北花田,きたはなだ,Kitahanada
+M29,新金岡,しんかなおか,Shinkanaoka
+M30,なかもず,なかもず,Nakamozu
+T11,大日,だいにち,Dainichi
+T12,守口,もりぐち,Moriguchi
+T13,太子橋今市,たいしばしいまいち,Taishibashi-Imaichi
+T14,千林大宮,せんばやしおおみや,Sembayashi-Omiya
+T15,関目高殿,せきめたかどの,Sekime-Takadono
+T16,野江内代,のえうちんだい,Noe-Uchindai
+T17,都島,みやこじま,Miyakojima
+T18,天神橋筋六丁目,てんじんばしすじろくちょうめ,Tenjimbashisuji 6-Chome
+T19,中崎町,なかざきちょう,Nakazakicho
+T20,東梅田,ひがしうめだ,Higashi-Umeda
+T21,南森町,みなみもりまち,Minamimorimachi
+T22,天満橋,てんまばし,Temmabashi
+T23,谷町四丁目,たにまちよんちょうめ,Tanimachi 4-Chome
+T24,谷町六丁目,たにまちろくちょうめ,Tanimachi 6-Chome
+T25,谷町九丁目,たにまちきゅうちょうめ,Tanimachi 9-Chome
+T26,四天王寺前夕陽ヶ丘,してんのうじまえゆうひがおか,Shitennoji-mae Yuhigaoka
+T27,天王寺,てんのうじ,Tennoji
+T28,阿倍野,あべの,Abeno
+T29,文の里,ふみのさと,Fuminosato
+T30,田辺,たなべ,Tanabe
+T31,駒川中野,こまがわなかの,Komagawa-Nakano
+T32,平野,ひらの,Hirano
+T33,喜連瓜破,きれうりわり,Kire-Uriwari
+T34,出戸,でと,Deto
+T35,長原,ながはら,Nagahara
+T36,八尾南,やおみなみ,Yaominami
+Y11,西梅田,にしうめだ,Nishi-Umeda
+Y12,肥後橋,ひごばし,Higobashi
+Y13,本町,ほんまち,Hommachi
+Y14,四ツ橋,よつばし,Yotsubashi
+Y15,なんば,なんば,Namba
+Y16,大国町,だいこくちょう,Daikokucho
+Y17,花園町,はなぞのちょう,Hanazonocho
+Y18,岸里,きしのさと,Kishinosato
+Y19,玉出,たまで,Tamade
+Y20,北加賀屋,きたかがや,Kitakagaya
+Y21,住之江公園,すみのえこうえん,Suminoekoen
+C10,コスモスクエア,こすもすくえあ,Cosmosquare
+C11,大阪港,おおさかこう,Osakako
+C12,朝潮橋,あさしおばし,Asashiobashi
+C13,弁天町,べんてんちょう,Bentencho
+C14,九条,くじょう,Kujo
+C15,阿波座,あわざ,Awaza
+C16,本町,ほんまち,Hommachi
+C17,堺筋本町,さかいすじほんまち,Sakaisuji-Hommachi
+C18,谷町四丁目,たにまちよんちょうめ,Tanimachi 4-Chome
+C19,森ノ宮,もりのみや,Morinomiya
+C20,緑橋,みどりばし,Midoribashi
+C21,深江橋,ふかえばし,Fukaebashi
+C22,高井田,たかいだ,Takada
+C23,長田,ながた,Nagata
+S11,野田阪神,のだはんしん,Nodahanshin
+S12,玉川,たまがわ,Tamagawa
+S13,阿波座,あわざ,Awaza
+S14,西長堀,にしながほり,Nishinagahori
+S15,桜川,さくらがわ,Sakuragawa
+S16,なんば,なんば,Namba
+S17,日本橋,にっぽんばし,Nippombashi
+S18,谷町九丁目,たにまちきゅうちょうめ,Tanimachi 9-Chome
+S19,鶴橋,つるはし,Tsuruhashi
+S20,今里,いまざと,Imazato
+S21,新深江,しんふかえ,Shin-Fukae
+S22,小路,しょうじ,Shoji
+S23,北巽,きたたつみ,Kita-Tatsumi
+S24,南巽,みなみたつみ,Minami-Tatsumi
+K11,天神橋筋六丁目,てんじんばしすじろくちょうめ,Tenjimbashisuji 6-Chome
+K12,扇町,おうぎまち,Ogimachi
+K13,南森町,みなみもりまち,Minamimorimachi
+K14,北浜,きたはま,Kitahama
+K15,堺筋本町,さかいすじほんまち,Sakaisuji-Hommachi
+K16,長堀橋,ながほりばし,Nagahoribashi
+K17,日本橋,にっぽんばし,Nippombashi
+K18,恵美須町,えびすちょう,Ebisucho
+K19,動物園前,どうぶつえんまえ,Dobutsuen-Mae
+K20,天下茶屋,てんがちゃや,Tengachaya
+N11,大正,たいしょう,Taisho
+N12,ドーム前千代崎,どーむまえちよざき,Dome-mae Chiyozaki
+N13,西長堀,にしながほり,Nishinagahori
+N14,西大橋,にしおおはし,Nishiohashi
+N15,心斎橋,しんさいばし,Shinsaibashi
+N16,長堀橋,ながほりばし,Nagahoribashi
+N17,松屋町,まつやまち,Matsuyamachi
+N18,谷町六丁目,たにまちろくちょうめ,Tanimachi 6-Chome
+N19,玉造,たまつくり,Tamatsukuri
+N20,森ノ宮,もりのみや,Morinomiya
+N21,大阪ビジネスパーク,おおさかびじねすぱーく,Osaka Business Park
+N22,京橋,きょうばし,Kyobashi
+N23,蒲生四丁目,がもうよんちょうめ,Gamo 4-Chome
+N24,今福鶴見,いまふくつるみ,Imafuku-Tsurumi
+N25,横堤,よこづつみ,Yokozutsumi
+N26,鶴見緑地,つるみりょくち,Tsurumi-ryokuchi
+N27,門真南,かどまみなみ,Kadoma-minami
+I11,井高野,いたかの,Itakano
+I12,瑞光四丁目,ずいこうよんちょうめ,Zuiko 4-Chome
+I13,だいどう豊里,だいどうとよさと,Daido-Toyosato
+I14,太子橋今市,たいしばしいまいち,Taishibashi-Imaichi
+I15,清水,しみず,Shimizu
+I16,新森古市,しんもりふるいち,Shimmori-Furuichi
+I17,関目成育,せきめせいいく,Sekime-Seiiku
+I18,蒲生四丁目,がもうよんちょうめ,Gamo 4-Chome
+I19,鴫野,しぎの,Shigino
+I20,緑橋,みどりばし,Midoribashi
+I21,今里,いまざと,Imazato
+P09,コスモスクエア,こすもすくえあ,Cosmosquare
+P10,トレードセンター前,とれーどせんたーまえ,Trade Center-Mae
+P11,中ふ頭,なかふとう,Nakafuto
+P12,ポートタウン西,ぽーとたうんにし,Port Town-Nishi
+P13,ポートタウン東,ぽーとたうんひがし,Port Town-Higashi
+P14,フェリーターミナル,ふぇりーたーみなる,Ferry Terminal
+P15,南港東,なんこうひがし,Nankohigashi
+P16,南港口,なんこうぐち,Nankoguchi
+P17,平林,ひらばやし,Hirabayashi
+P18,住之江公園,すみのえこうえん,Suminoekoen

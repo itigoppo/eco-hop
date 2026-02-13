@@ -1,0 +1,26 @@
+#!/bin/sh
+
+echo "Running pre-commit checks..."
+echo ""
+
+# 1. Run lint
+echo "Running lint..."
+pnpm lint
+if [ $? -ne 0 ]; then
+  echo "Lint failed. Please fix linting errors before committing."
+  exit 1
+fi
+echo "Lint passed"
+echo ""
+
+# 2. Run type check
+echo "Running type check..."
+pnpm check:type
+if [ $? -ne 0 ]; then
+  echo "Type check failed. Please fix type errors before committing."
+  exit 1
+fi
+echo "Type check passed"
+echo ""
+
+echo "All pre-commit checks passed!"
