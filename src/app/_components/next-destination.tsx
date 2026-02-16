@@ -48,6 +48,8 @@ interface Props {
   destinationRevealed: boolean
   onGo: () => void
   onReroll: () => void
+  onFinish: () => void
+  canFinish: boolean
   savedDiceFaces?: number[]
   onRevealed: (diceFaces: number[]) => void
 }
@@ -68,6 +70,8 @@ export function NextDestination({
   savedDiceFaces,
   onGo,
   onReroll,
+  onFinish,
+  canFinish,
   onRevealed,
 }: Props) {
   const [mode, setMode] = useState<RevealMode>(initialMode(isFirstDestination, destinationRevealed))
@@ -325,6 +329,16 @@ export function NextDestination({
             次行こ
           </Button>
         </div>
+
+        {canFinish && (
+          <Button
+            variant="ghost"
+            onClick={onFinish}
+            className="mt-3 w-full text-sm text-zinc-400 hover:text-zinc-600"
+          >
+            今日はここまで
+          </Button>
+        )}
 
         {route && route.length > 0 && (
           <RouteDisplay currentStation={currentStation} steps={route} />

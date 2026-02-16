@@ -1,10 +1,13 @@
 "use client"
 
 import { AppHeader } from "@/components/layouts/app-header"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 import { buildGraph, findRoute, type MetroGraph } from "@/lib/metro-graph"
 import { pickNextStation, pickStartStation } from "@/lib/station-picker"
 import {
   clearState,
+  getTodayDateString,
   loadExcludePastVisited,
   loadPastVisitedGroupCds,
   loadState,
@@ -63,6 +66,7 @@ function initializeState(graph: MetroGraph): PersistedState {
     history,
     pendingNextCd,
     pendingRoute: computeRoute(graph, startCd, pendingNextCd),
+    sessionDate: getTodayDateString(),
   }
 }
 
@@ -87,7 +91,19 @@ export function StationExplorer() {
         setExcludePastVisited(loadExcludePastVisited())
 
         const saved = loadState()
-        if (saved && saved.history.length > 1) {
+        if (saved) {
+          // 後方互換: sessionDate がない古いセーブに今日の日付を補完
+          if (!saved.sessionDate) {
+            saved.sessionDate = getTodayDateString()
+          }
+        }
+
+        if (saved && saved.completed) {
+          // 完了済みセッション: 完了画面を復元
+          setState(saved)
+          setStartRevealed(true)
+          setDestinationRevealed(false)
+        } else if (saved && saved.history.length > 1) {
           // 2駅目以降: 既存セーブを復元（ルーレット不要で表示済み）
           setState(saved)
           setStartRevealed(true)
@@ -108,7 +124,7 @@ export function StationExplorer() {
   }, [])
 
   const suspended = new Set(state?.suspendedLineCds ?? [])
-  const pastGCds = excludePastVisited ? loadPastVisitedGroupCds() : undefined
+  const pastGCds = excludePastVisited ? loadPastVisitedGroupCds(state?.sessionDate) : undefined
 
   const handleGo = useCallback(() => {
     if (!graph || !state || !state.pendingNextCd) return
@@ -135,6 +151,7 @@ export function StationExplorer() {
       pendingNextCd: newPending,
       pendingRoute: computeRoute(graph, nextCd, newPending, sus.size > 0 ? sus : undefined),
       suspendedLineCds: state.suspendedLineCds,
+      sessionDate: state.sessionDate,
     }
 
     setState(newState)
@@ -202,7 +219,7 @@ export function StationExplorer() {
       saveExcludePastVisited(v)
       setExcludePastVisited(v)
 
-      const newPastGCds = v ? loadPastVisitedGroupCds() : undefined
+      const newPastGCds = v ? loadPastVisitedGroupCds(state.sessionDate) : undefined
       const sus = new Set(state.suspendedLineCds ?? [])
       const newPending = pickNextStation(
         graph,
@@ -228,15 +245,41 @@ export function StationExplorer() {
     [graph, state]
   )
 
-  const handleReset = useCallback(() => {
+  const handleFinish = useCallback(() => {
+    if (!graph || !state) return
+
+    const newState: PersistedState = {
+      ...state,
+      pendingNextCd: null,
+      pendingRoute: null,
+      completed: true,
+      destinationRevealed: false,
+      diceFaces: undefined,
+    }
+
+    setState(newState)
+    saveState(newState)
+    setDestinationRevealed(false)
+  }, [graph, state])
+
+  const handleNewSession = useCallback(() => {
     if (!graph) return
-    clearState()
     const initial = initializeState(graph)
     setState(initial)
     saveState(initial)
     setStartRevealed(false)
     setDestinationRevealed(false)
   }, [graph])
+
+  const handleReset = useCallback(() => {
+    if (!graph) return
+    clearState(state?.sessionDate)
+    const initial = initializeState(graph)
+    setState(initial)
+    saveState(initial)
+    setStartRevealed(false)
+    setDestinationRevealed(false)
+  }, [graph, state?.sessionDate])
 
   if (isLoading || !graph || !state) {
     return (
@@ -251,6 +294,7 @@ export function StationExplorer() {
     ? (graph.stations.get(state.pendingNextCd) ?? null)
     : null
   const totalStations = countUniqueStations(graph)
+  const uniqueVisited = new Set(state.history.map((h) => h.stationGCd)).size
 
   return (
     <div className="space-y-4">
@@ -266,37 +310,54 @@ export function StationExplorer() {
         onReveal={() => setStartRevealed(true)}
       />
 
-      <div className="relative">
-        <div className="absolute top-2 right-2 z-10">
-          <SettingsSheet
+      {state.completed ? (
+        <Card>
+          <CardContent className="py-8 text-center">
+            <p className="text-2xl font-bold">お疲れさまでした！</p>
+            <p className="mt-2 text-lg text-zinc-600">{uniqueVisited} 駅巡りました</p>
+            <Button
+              onClick={handleNewSession}
+              className="mt-6 rounded-full px-8 py-4 text-base font-bold"
+            >
+              新しく始める
+            </Button>
+          </CardContent>
+        </Card>
+      ) : (
+        <div className="relative">
+          <div className="absolute top-2 right-2 z-10">
+            <SettingsSheet
+              graph={graph}
+              suspendedLineCds={suspended}
+              onSuspensionToggle={handleSuspensionToggle}
+              excludePastVisited={excludePastVisited}
+              onExcludePastVisitedChange={handleExcludePastVisitedChange}
+            />
+          </div>
+          <NextDestination
+            currentStation={currentStation}
+            station={pendingStation}
             graph={graph}
-            suspendedLineCds={suspended}
-            onSuspensionToggle={handleSuspensionToggle}
-            excludePastVisited={excludePastVisited}
-            onExcludePastVisitedChange={handleExcludePastVisitedChange}
+            route={state.pendingRoute}
+            isFirstDestination={state.history.length <= 1}
+            startRevealed={startRevealed || state.history.length > 1}
+            destinationRevealed={destinationRevealed}
+            savedDiceFaces={state.diceFaces}
+            onGo={handleGo}
+            onReroll={handleReroll}
+            onFinish={handleFinish}
+            canFinish={state.history.length > 1}
+            onRevealed={(faces) => {
+              setDestinationRevealed(true)
+              if (state) {
+                const updated = { ...state, destinationRevealed: true, diceFaces: faces }
+                setState(updated)
+                saveState(updated)
+              }
+            }}
           />
         </div>
-        <NextDestination
-          currentStation={currentStation}
-          station={pendingStation}
-          graph={graph}
-          route={state.pendingRoute}
-          isFirstDestination={state.history.length <= 1}
-          startRevealed={startRevealed || state.history.length > 1}
-          destinationRevealed={destinationRevealed}
-          savedDiceFaces={state.diceFaces}
-          onGo={handleGo}
-          onReroll={handleReroll}
-          onRevealed={(faces) => {
-            setDestinationRevealed(true)
-            if (state) {
-              const updated = { ...state, destinationRevealed: true, diceFaces: faces }
-              setState(updated)
-              saveState(updated)
-            }
-          }}
-        />
-      </div>
+      )}
 
       <RouteMap
         graph={graph}
@@ -310,6 +371,7 @@ export function StationExplorer() {
       <VisitHistory
         history={startRevealed || state.history.length > 1 ? state.history : []}
         onReset={handleReset}
+        sessionDate={state.sessionDate}
       />
     </div>
   )

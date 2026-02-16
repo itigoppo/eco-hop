@@ -31,23 +31,27 @@ function formatDate(dateStr: string): string {
 interface Props {
   history: HistoryEntry[]
   onReset: () => void
+  sessionDate?: string
 }
 
-export function VisitHistory({ history, onReset }: Props) {
+export function VisitHistory({ history, onReset, sessionDate }: Props) {
   const [open, setOpen] = useState(false)
   const [pastDays, setPastDays] = useState<PastDay[]>([])
-  const hasPast = loadPastDays().length > 0
+  const hasPast = loadPastDays(sessionDate).length > 0
 
   const handleOpen = useCallback(() => {
-    setPastDays(loadPastDays())
+    setPastDays(loadPastDays(sessionDate))
     setOpen(true)
-  }, [])
+  }, [sessionDate])
 
-  const handleDelete = useCallback((date: string) => {
-    if (!window.confirm(`${formatDate(date)} の履歴を削除しますか？`)) return
-    deletePastDay(date)
-    setPastDays(loadPastDays())
-  }, [])
+  const handleDelete = useCallback(
+    (date: string) => {
+      if (!window.confirm(`${formatDate(date)} の履歴を削除しますか？`)) return
+      deletePastDay(date)
+      setPastDays(loadPastDays(sessionDate))
+    },
+    [sessionDate]
+  )
 
   const handlePost = useCallback(() => {
     const stationNames = history.map((h) => h.name)

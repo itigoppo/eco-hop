@@ -4,12 +4,16 @@ import type { HistoryEntry, PersistedState } from "@/types"
 
 const STORAGE_PREFIX = "eco-hop-state-"
 
-function getTodayKey(): string {
+export function getTodayDateString(): string {
   const today = new Date()
   const yyyy = today.getFullYear()
   const mm = String(today.getMonth() + 1).padStart(2, "0")
   const dd = String(today.getDate()).padStart(2, "0")
-  return `${STORAGE_PREFIX}${yyyy}-${mm}-${dd}`
+  return `${yyyy}-${mm}-${dd}`
+}
+
+function getTodayKey(): string {
+  return `${STORAGE_PREFIX}${getTodayDateString()}`
 }
 
 export function loadState(): PersistedState | null {
@@ -25,12 +29,14 @@ export function loadState(): PersistedState | null {
 
 export function saveState(state: PersistedState): void {
   if (typeof window === "undefined") return
-  localStorage.setItem(getTodayKey(), JSON.stringify(state))
+  const key = state.sessionDate ? `${STORAGE_PREFIX}${state.sessionDate}` : getTodayKey()
+  localStorage.setItem(key, JSON.stringify(state))
 }
 
-export function clearState(): void {
+export function clearState(sessionDate?: string): void {
   if (typeof window === "undefined") return
-  localStorage.removeItem(getTodayKey())
+  const key = sessionDate ? `${STORAGE_PREFIX}${sessionDate}` : getTodayKey()
+  localStorage.removeItem(key)
 }
 
 export interface PastDay {
@@ -38,14 +44,16 @@ export interface PastDay {
   history: HistoryEntry[]
 }
 
-export function loadPastDays(): PastDay[] {
+export function loadPastDays(activeSessionDate?: string): PastDay[] {
   if (typeof window === "undefined") return []
   const todayKey = getTodayKey()
+  const activeKey = activeSessionDate ? `${STORAGE_PREFIX}${activeSessionDate}` : todayKey
   const results: PastDay[] = []
 
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i)
-    if (!key || !key.startsWith(STORAGE_PREFIX) || key === todayKey) continue
+    if (!key || !key.startsWith(STORAGE_PREFIX)) continue
+    if (key === todayKey || key === activeKey) continue
     const date = key.slice(STORAGE_PREFIX.length)
     try {
       const raw = localStorage.getItem(key)
@@ -69,9 +77,9 @@ export function deletePastDay(date: string): void {
 }
 
 /** 過去日の訪問済み stationGCd をすべて収集して返す */
-export function loadPastVisitedGroupCds(): Set<string> {
+export function loadPastVisitedGroupCds(activeSessionDate?: string): Set<string> {
   const gcds = new Set<string>()
-  for (const day of loadPastDays()) {
+  for (const day of loadPastDays(activeSessionDate)) {
     for (const entry of day.history) {
       gcds.add(entry.stationGCd)
     }

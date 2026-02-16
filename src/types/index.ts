@@ -92,4 +92,6 @@ export interface PersistedState {
   suspendedLineCds?: string[]
   destinationRevealed?: boolean
   diceFaces?: number[]
+  sessionDate?: string // "YYYY-MM-DD" セッション開始日
+  completed?: boolean // セッション終了フラグ
 }
