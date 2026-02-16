@@ -35,6 +35,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ja">
       <body
+        suppressHydrationWarning
         className={cn(
           geistSans.variable,
           geistMono.variable,
