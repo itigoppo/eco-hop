@@ -77,6 +77,7 @@ export function StationExplorer() {
   const [excludePastVisited, setExcludePastVisited] = useState(false)
   const [startRevealed, setStartRevealed] = useState(false)
   const [destinationRevealed, setDestinationRevealed] = useState(false)
+  const processing = useRef(false)
   const initialized = useRef(false)
 
   useEffect(() => {
@@ -127,7 +128,8 @@ export function StationExplorer() {
   const pastGCds = excludePastVisited ? loadPastVisitedGroupCds(state?.sessionDate) : undefined
 
   const handleGo = useCallback(() => {
-    if (!graph || !state || !state.pendingNextCd) return
+    if (!graph || !state || !state.pendingNextCd || processing.current) return
+    processing.current = true
     setDestinationRevealed(false)
 
     const nextCd = state.pendingNextCd
@@ -156,10 +158,12 @@ export function StationExplorer() {
 
     setState(newState)
     saveState(newState)
+    processing.current = false
   }, [graph, state, pastGCds])
 
   const handleReroll = useCallback(() => {
-    if (!graph || !state) return
+    if (!graph || !state || processing.current) return
+    processing.current = true
     setDestinationRevealed(false)
     const sus = new Set(state.suspendedLineCds ?? [])
     const newPending = pickNextStation(
@@ -183,6 +187,7 @@ export function StationExplorer() {
     }
     setState(newState)
     saveState(newState)
+    processing.current = false
   }, [graph, state, pastGCds])
 
   const handleSuspensionToggle = useCallback(
@@ -246,7 +251,8 @@ export function StationExplorer() {
   )
 
   const handleFinish = useCallback(() => {
-    if (!graph || !state) return
+    if (!graph || !state || processing.current) return
+    processing.current = true
 
     const newState: PersistedState = {
       ...state,
@@ -260,25 +266,30 @@ export function StationExplorer() {
     setState(newState)
     saveState(newState)
     setDestinationRevealed(false)
+    processing.current = false
   }, [graph, state])
 
   const handleNewSession = useCallback(() => {
-    if (!graph) return
+    if (!graph || processing.current) return
+    processing.current = true
     const initial = initializeState(graph)
     setState(initial)
     saveState(initial)
     setStartRevealed(false)
     setDestinationRevealed(false)
+    processing.current = false
   }, [graph])
 
   const handleReset = useCallback(() => {
-    if (!graph) return
+    if (!graph || processing.current) return
+    processing.current = true
     clearState(state?.sessionDate)
     const initial = initializeState(graph)
     setState(initial)
     saveState(initial)
     setStartRevealed(false)
     setDestinationRevealed(false)
+    processing.current = false
   }, [graph, state?.sessionDate])
 
   if (isLoading || !graph || !state) {

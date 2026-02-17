@@ -1,5 +1,6 @@
 "use client"
 
+import { ConfirmDialog } from "@/components/common/confirm-dialog"
 import { StationList } from "@/components/station-list"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -39,19 +40,26 @@ export function VisitHistory({ history, onReset, sessionDate }: Props) {
   const [pastDays, setPastDays] = useState<PastDay[]>([])
   const hasPast = loadPastDays(sessionDate).length > 0
 
+  // 確認ダイアログの状態
+  const [deleteTarget, setDeleteTarget] = useState<string | null>(null)
+  const [resetConfirmOpen, setResetConfirmOpen] = useState(false)
+
   const handleOpen = useCallback(() => {
     setPastDays(loadPastDays(sessionDate))
     setOpen(true)
   }, [sessionDate])
 
-  const handleDelete = useCallback(
-    (date: string) => {
-      if (!window.confirm(`${formatDate(date)} の履歴を削除しますか？`)) return
-      deletePastDay(date)
-      setPastDays(loadPastDays(sessionDate))
-    },
-    [sessionDate]
-  )
+  const handleDeleteConfirm = useCallback(() => {
+    if (!deleteTarget) return
+    deletePastDay(deleteTarget)
+    setPastDays(loadPastDays(sessionDate))
+    setDeleteTarget(null)
+  }, [deleteTarget, sessionDate])
+
+  const handleResetConfirm = useCallback(() => {
+    setResetConfirmOpen(false)
+    onReset()
+  }, [onReset])
 
   const handlePost = useCallback(() => {
     const stationNames = history.map((h) => h.name)
@@ -62,12 +70,6 @@ export function VisitHistory({ history, onReset, sessionDate }: Props) {
     const url = `https://x.com/intent/tweet?text=${encodeURIComponent(text)}`
     window.open(url, "_blank", "noopener,noreferrer")
   }, [history])
-
-  const handleReset = useCallback(() => {
-    if (window.confirm("リセットしますか？訪問履歴がすべて消去されます。")) {
-      onReset()
-    }
-  }, [onReset])
 
   if (history.length === 0 && !hasPast) return null
 
@@ -93,7 +95,7 @@ export function VisitHistory({ history, onReset, sessionDate }: Props) {
               </Button>
               <Button
                 variant="ghost"
-                onClick={handleReset}
+                onClick={() => setResetConfirmOpen(true)}
                 className="mt-1 w-full text-zinc-400 hover:text-red-500"
               >
                 <span className="material-symbols-outlined text-base">restart_alt</span>
@@ -141,7 +143,7 @@ export function VisitHistory({ history, onReset, sessionDate }: Props) {
                           <Button
                             variant="ghost"
                             size="icon"
-                            onClick={() => handleDelete(day.date)}
+                            onClick={() => setDeleteTarget(day.date)}
                             className="h-8 w-8 shrink-0 text-zinc-300 hover:text-red-500"
                           >
                             <span className="material-symbols-outlined text-base">delete</span>
@@ -161,6 +163,26 @@ export function VisitHistory({ history, onReset, sessionDate }: Props) {
           </DialogBody>
         </DialogContent>
       </Dialog>
+
+      <ConfirmDialog
+        isOpen={!!deleteTarget}
+        title="履歴を削除"
+        description={deleteTarget ? `${formatDate(deleteTarget)} の履歴を削除しますか？` : ""}
+        confirmLabel="削除"
+        danger
+        onConfirm={handleDeleteConfirm}
+        onCancel={() => setDeleteTarget(null)}
+      />
+
+      <ConfirmDialog
+        isOpen={resetConfirmOpen}
+        title="リセット"
+        description="訪問履歴がすべて消去されます。"
+        confirmLabel="リセット"
+        danger
+        onConfirm={handleResetConfirm}
+        onCancel={() => setResetConfirmOpen(false)}
+      />
     </>
   )
 }
